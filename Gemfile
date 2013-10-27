@@ -3,6 +3,8 @@ ruby '2.0.0'
 
 gem 'devise' #user authentication
 
+gem 'gravtastic'
+
 gem 'bootstrap-sass', '~> 3.0.0.0.rc' #use bootstrap css
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
