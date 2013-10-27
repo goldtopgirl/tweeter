@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
 
-gem 'devise'
+gem 'devise' #user authentication
+
+gem 'bootstrap-sass', '~> 3.0.0.0.rc' #use bootstrap css
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'

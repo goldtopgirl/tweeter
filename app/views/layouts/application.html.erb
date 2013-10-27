@@ -7,9 +7,37 @@
   <%= csrf_meta_tags %> <!-- security - don't delete! -->
 </head>
 <body>
+  <nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <%= link_to "My 1st Ruby App", root_path, class: 'navbar-brand' %>
+    <!--<a class="navbar-brand" href="#"></a>-->
+  </div>
+  
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
   <% if current_user %>
-  <%= link_to "Sign out", destroy_user_session_path, method: :delete %> <!--having %= means print to page, not just run code-->
+    <ul class="nav navbar-nav">
+      <li class="active">  <%= link_to "Only my tweets", tweets_path %></li>
+    </ul>
   <% end %>
+        <ul class="nav navbar-nav navbar-right">
+        <% if !current_user %>
+        <li><%= link_to 'Sign in to post a message', new_user_session_path %>
+        <% else %>
+        <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %> <!--having %= means print to page, not just run code--></li>
+        <% end %>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+  
+</nav>
+  
 <%= yield %>
 
 </body>

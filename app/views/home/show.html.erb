@@ -1,0 +1,9 @@
+
+
+<div class="tweets">
+  <% @tweets.each do |tweet| %>
+    <div class="tweet">
+      <p><%= tweet.body %> | written by:<%= tweet.user.email %> | <%= time_ago_in_words Time.now, tweet.created_at %> ago</p>
+  </div>
+  <% end %>
+</div>
