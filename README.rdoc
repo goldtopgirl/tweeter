@@ -5,7 +5,7 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version - 2
 
 * System dependencies
 
@@ -24,5 +24,8 @@ Things you may want to cover:
 * ...
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Got an app running; creating, updating, deleting text stored in a database
+Installed ruby on rails, ran database migrations using nitrous.io
+learnt a bit of ruby; use loops, variables, etc
+added a gem from github to do user authentication
+added bootstrap css
