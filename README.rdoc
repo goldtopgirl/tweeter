@@ -24,8 +24,8 @@ Things you may want to cover:
 * ...
 
 
-*Got an app running; creating, updating, deleting text stored in a database
-*Installed ruby on rails, ran database migrations using nitrous.io
-*Learnt a bit of ruby; use loops, variables, etc
-*Added a gem from github to do user authentication
-*Added bootstrap css
+* Got an app running; creating, updating, deleting text stored in a database
+* Installed ruby on rails, ran database migrations using nitrous.io
+* Learnt a bit of ruby; use loops, variables, etc
+* Added a gem from github to do user authentication
+* Added bootstrap css
